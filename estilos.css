@@ -511,6 +511,16 @@ margin-top:60px;
 
 }
 
+/* Control de tamaño para la sección de colaboradores */
+.contenedor-valores img,
+.empresa img {
+    width: 200px;         /* Ajusta el ancho de las imágenes */
+    height: 200px;        /* Fuerza a que todas tengan el mismo alto */
+    object-fit: cover;    /* Recorta la imagen proporcionalmente para que no se deforme */
+    border-radius: 50%;   /* Opcional: las hace circulares (puedes cambiarlo a 12px si las quieres cuadradas con bordes redondeados) */
+    margin-bottom: 15px;
+}
+
 .pagina p{
 
 font-size:22px;
