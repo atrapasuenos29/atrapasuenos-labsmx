@@ -1,0 +1,518 @@
+/* ==========================
+   CONFIGURACIÓN GENERAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#08121f;
+
+    color:white;
+
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+    background:rgba(8,18,31,.85);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 3px 15px rgba(0,0,0,.4);
+
+}
+
+.navbar{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+}
+
+.logo h2{
+
+    color:#00d9ff;
+
+    font-size:28px;
+
+}
+
+.menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:2px;
+
+    background:#00d9ff;
+
+    left:0;
+
+    bottom:-6px;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#00d9ff;
+
+}
+
+.menu a:hover::after{
+
+    width:100%;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../img/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.contenido-hero{
+
+    width:90%;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    color:#00d9ff;
+
+}
+
+.hero p{
+
+    margin:25px auto;
+
+    max-width:700px;
+
+    font-size:22px;
+
+    line-height:1.7;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#00d9ff;
+
+    color:#08121f;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+.boton:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 30px #00d9ff;
+
+}
+
+/* ==========================
+   EMPRESA
+========================== */
+
+.empresa{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.texto h2{
+
+    font-size:42px;
+
+    color:#00d9ff;
+
+    margin-bottom:25px;
+
+}
+
+.texto p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+.imagen img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+/* ==========================
+   VALORES
+========================== */
+
+.valores{
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.valores h2{
+
+    font-size:42px;
+
+    color:#00d9ff;
+
+    margin-bottom:60px;
+
+}
+
+.contenedor-valores{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 0 25px rgba(0,217,255,.45);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#00d9ff;
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#050b15;
+
+    margin-top:100px;
+
+    padding:50px 20px;
+
+    text-align:center;
+
+}
+
+.footer-contenido h3{
+
+    color:#00d9ff;
+
+    font-size:32px;
+
+}
+
+.footer-contenido p{
+
+    margin:20px 0;
+
+}
+
+.redes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin:25px 0;
+
+}
+
+.redes a{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#00d9ff;
+
+    color:#08121f;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    transition:.4s;
+
+}
+
+.redes a:hover{
+
+    transform:scale(1.15);
+
+    box-shadow:0 0 25px #00d9ff;
+
+}
+
+.copy{
+
+    color:#aaa;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.menu{
+
+gap:15px;
+
+}
+
+.logo h2{
+
+font-size:20px;
+
+}
+
+.empresa{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* Botón volver arriba */
+
+#btnArriba{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#00d9ff;
+    color:#08121f;
+    font-size:24px;
+    cursor:pointer;
+    opacity:0;
+    transition:.4s;
+    pointer-events:none;
+}
+
+#btnArriba.mostrar{
+    opacity:1;
+    pointer-events:auto;
+}
+
+#btnArriba:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00d9ff;
+}
+
+.menu a.activo{
+    color:#00d9ff;
+}
+/* Páginas internas */
+
+.pagina{
+
+height:55vh;
+
+}
+
+.pagina h1{
+
+font-size:60px;
+
+margin-top:60px;
+
+}
+
+.pagina p{
+
+font-size:22px;
+
+}
