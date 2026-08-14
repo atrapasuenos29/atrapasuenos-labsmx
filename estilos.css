@@ -511,20 +511,14 @@ margin-top:60px;
 
 }
 
-/* Contenedor flexible en línea horizontal */
-.contenedor-valores {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
+/* Control de tamaño para la sección de colaboradores */
+.contenedor-valores img,
+.empresa img {
+    width: 100px;         /* Ajusta el ancho de las imágenes */
+    height: 100px;        /* Fuerza a que todas tengan el mismo alto */
+    object-fit: cover;    /* Recorta la imagen proporcionalmente para que no se deforme */
+    border-radius: 25%;   /* Opcional: las hace circulares (puedes cambiarlo a 12px si las quieres cuadradas con bordes redondeados) */
+    margin-bottom: 10px;
 }
 
-/* Control del tamaño chico e igual para las fotos */
-.contenedor-valores img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 50%; /* Las hace circulares. Si las quieres cuadradas con esquinas suaves, usa 12px */
-    margin-bottom: 12px;
-}
+
